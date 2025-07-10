@@ -111,12 +111,12 @@
             </div>
             <!--
             <div>
-                <label for="email" class="block text-gray-700 font-medium">อีเมล</label>
-                <input type="email" name="email" id="email" class="w-full p-3 border rounded-lg input-field focus:outline-none focus:ring" placeholder="กรอกอีเมล" required>
-            </div>
-            <div>
                 <label for="phone" class="block text-gray-700 font-medium">เบอร์โทรศัพท์</label>
                 <input type="tel" name="phone" id="phone" class="w-full p-3 border rounded-lg input-field focus:outline-none focus:ring" placeholder="กรอกเบอร์โทรศัพท์" required>
+            </div>
+            <div>
+                <label for="email" class="block text-gray-700 font-medium">อีเมล</label>
+                <input type="email" name="email" id="email" class="w-full p-3 border rounded-lg input-field focus:outline-none focus:ring" placeholder="กรอกอีเมล" required>
             </div>
             -->
             <button type="submit" id="submitButton" class="w-full bg-gradient-to-r from-indigo-500 to-blue-600 text-white py-3 px-4 rounded-lg hover:from-indigo-600 hover:to-blue-700 transition duration-300 transform hover:-translate-y-1">
@@ -257,7 +257,7 @@
                                             "contents": [
                                                 {
                                                     "type": "text",
-                                                    "text": "📧 อีเมล:",
+                                                    "text": "📱 เบอร์:",
                                                     "size": "sm",
                                                     "color": "#6b7280",
                                                     "flex": 0,
@@ -265,7 +265,7 @@
                                                 },
                                                 {
                                                     "type": "text",
-                                                    "text": formData.email,
+                                                    "text": formData.phone,
                                                     "size": "sm",
                                                     "color": "#111827",
                                                     "wrap": true,
@@ -280,7 +280,7 @@
                                             "contents": [
                                                 {
                                                     "type": "text",
-                                                    "text": "📱 เบอร์:",
+                                                    "text": "📧 อีเมล:",
                                                     "size": "sm",
                                                     "color": "#6b7280",
                                                     "flex": 0,
@@ -288,7 +288,7 @@
                                                 },
                                                 {
                                                     "type": "text",
-                                                    "text": formData.phone,
+                                                    "text": formData.email,
                                                     "size": "sm",
                                                     "color": "#111827",
                                                     "wrap": true,
@@ -377,8 +377,8 @@
             // Get form data
             const formData = {
                 name: document.getElementById("name").value,
-                // email: document.getElementById("email").value,
                 // phone: document.getElementById("phone").value,
+                // email: document.getElementById("email").value,
                 userId: document.getElementById("userId").value,
                 lineName: document.getElementById("lineName").value
             };
@@ -407,8 +407,8 @@
                     </div>
                     <div class="text-left space-y-1">
                         <p class="text-sm"><span class="font-medium">ชื่อ:</span> ${formData.name}</p>
-                        <!-- <p class="text-sm"><span class="font-medium">อีเมล:</span> ${formData.email}</p> -->
                         <!-- <p class="text-sm"><span class="font-medium">เบอร์โทร:</span> ${formData.phone}</p> -->
+                        <!-- <p class="text-sm"><span class="font-medium">อีเมล:</span> ${formData.email}</p> -->
                         <p class="text-sm"><span class="font-medium">เวลา:</span> ${new Date().toLocaleString('th-TH')}</p>
                     </div>
                 `;
