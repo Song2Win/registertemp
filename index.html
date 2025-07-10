@@ -382,7 +382,8 @@
             try {
                 // 1. Send data to Google Apps Script
                 console.log("Sending data to Google Apps Script...");
-                const scriptResponse = await fetch('https://script.google.com/macros/s/AKfycbzfv_u4qi7cbrTeD2XSHQ_cwiRAHey467gEU_E7sOA4gAmlg1pELEsDr-tpZqvDpcxh/exec
+                const scriptResponse = await fetch('https://script.google.com/macros/s/AKfycbxfZxe5zGAROF55o-USDAm2V8F1VI8Aj9rJjebmpmK-C6_r6IWY8aT_e_kB3F50fawfkw/exec', {
+                    method: "POST",
                     body: new FormData(form)
                 });
 
